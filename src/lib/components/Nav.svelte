@@ -14,7 +14,7 @@
 			<Logo />
 			<span class="h-8 w-px bg-border" aria-hidden="true"></span>
 			<span class="text-lg font-bold text-foreground">
-				Wéber <span class="font-light text-muted-foreground">Kft.</span>
+				Wéber <span class="font-normal text-muted-foreground">Kft.</span>
 			</span>
 		</a>
 
