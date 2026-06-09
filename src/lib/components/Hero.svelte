@@ -106,7 +106,9 @@
 			<ol class="grid gap-3.5">
 				{#each processSteps as step (step.number)}
 					<li class="flex gap-3 border-t pt-3.5">
-						<span class="w-8 shrink-0 self-center text-xs font-bold tracking-widest text-primary">
+						<span
+							class="w-8 shrink-0 self-center text-center text-sm font-bold tracking-widest text-primary"
+						>
 							{step.number}
 						</span>
 						<div>
