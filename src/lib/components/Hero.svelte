@@ -56,42 +56,62 @@
 			</div>
 		</div>
 
-		<aside class="hero-process" aria-labelledby="hero-process-title">
-			<div class="hero-process__head">
+		<aside
+			class="rounded-2xl border bg-white/75 p-4 shadow-xs"
+			aria-labelledby="hero-process-title"
+		>
+			<div class="flex items-start justify-between gap-4 pb-4">
 				<div>
-					<p class="text-xs font-medium tracking-[0.18em] text-primary uppercase">Közös munka</p>
-					<h2 id="hero-process-title" class="roboto-slab mt-1 text-lg font-bold">
+					<p class="mb-3 text-xs font-medium tracking-widest text-primary uppercase">Közös munka</p>
+					<h2 id="hero-process-title" class="roboto-slab mt-1 text-xl font-bold">
 						Így épül fel a közös munka
 					</h2>
 				</div>
 
 				<svg
-					class="hero-mark size-20 text-zinc-300"
+					class="size-20 text-zinc-300"
 					viewBox="0 0 96 96"
 					fill="none"
 					xmlns="http://www.w3.org/2000/svg"
 					aria-hidden="true"
 				>
-					<circle class="hero-mark__glow" cx="48" cy="48" r="34" />
-					<path class="hero-mark__guide" d="M18 48H78M48 18V78" />
-					<path class="hero-mark__outer" d="M48 14L77 31V65L48 82L19 65V31L48 14Z" />
-					<path class="hero-mark__inner" d="M48 29L64 38V58L48 67L32 58V38L48 29Z" />
-					<g class="hero-mark__orbit">
+					<circle class="hero-mark__glow origin-center fill-primary/15" cx="48" cy="48" r="34" />
+					<path
+						class="stroke-current/50"
+						stroke-dasharray="1 6"
+						stroke-linecap="round"
+						d="M18 48H78M48 18V78"
+					/>
+					<path
+						class="hero-mark__outer stroke-primary"
+						stroke-linejoin="round"
+						stroke-width="1.5"
+						vector-effect="non-scaling-stroke"
+						d="M48 14L77 31V65L48 82L19 65V31L48 14Z"
+					/>
+					<path
+						class="stroke-foreground/50"
+						vector-effect="non-scaling-stroke"
+						d="M48 29L64 38V58L48 67L32 58V38L48 29Z"
+					/>
+					<g class="hero-mark__orbit origin-center fill-primary drop-shadow-md transform-view">
 						<circle cx="48" cy="14" r="2" />
 						<circle cx="77" cy="65" r="2" />
 						<circle cx="19" cy="65" r="2" />
 					</g>
-					<circle class="hero-mark__center" cx="48" cy="48" r="2.5" />
+					<circle class="fill-foreground" cx="48" cy="48" r="2.5" />
 				</svg>
 			</div>
 
-			<ol class="hero-process__list">
+			<ol class="grid gap-3.5">
 				{#each processSteps as step (step.number)}
-					<li>
-						<span>{step.number}</span>
+					<li class="flex gap-3 border-t pt-3.5">
+						<span class="w-8 shrink-0 self-center text-xs font-bold tracking-widest text-primary">
+							{step.number}
+						</span>
 						<div>
-							<h3>{step.title}</h3>
-							<p>{step.description}</p>
+							<h3 class="leading-tight font-bold">{step.title}</h3>
+							<p class="mt-1 text-sm leading-normal text-muted-foreground">{step.description}</p>
 						</div>
 					</li>
 				{/each}
@@ -101,94 +121,16 @@
 </section>
 
 <style>
-	.hero-process {
-		border: 1px solid var(--border);
-		border-radius: 1rem;
-		background: rgb(255 255 255 / 0.72);
-		box-shadow: 0 18px 48px rgb(24 24 27 / 0.06);
-		padding: 1.1rem;
-	}
-
-	.hero-process__head {
-		display: flex;
-		align-items: flex-start;
-		justify-content: space-between;
-		gap: 1rem;
-		padding-bottom: 1rem;
-	}
-
-	.hero-process__list {
-		display: grid;
-		gap: 0.85rem;
-	}
-
-	.hero-process__list li {
-		display: grid;
-		grid-template-columns: 2rem 1fr;
-		gap: 0.8rem;
-		padding-top: 0.85rem;
-		border-top: 1px solid var(--border);
-	}
-
-	.hero-process__list span {
-		color: var(--primary);
-		font-size: 0.72rem;
-		font-weight: 700;
-		letter-spacing: 0.12em;
-	}
-
-	.hero-process__list h3 {
-		font-weight: 700;
-		line-height: 1.2;
-	}
-
-	.hero-process__list p {
-		margin-top: 0.18rem;
-		color: var(--muted-foreground);
-		font-size: 0.86rem;
-		line-height: 1.45;
-	}
-
 	.hero-mark__glow {
 		animation: hero-breathe 12s ease-in-out infinite;
-		fill: color-mix(in oklch, var(--primary) 14%, transparent);
-		transform-origin: center;
-	}
-
-	.hero-mark__guide {
-		stroke: currentColor;
-		stroke-dasharray: 1 6;
-		stroke-linecap: round;
-		stroke-opacity: 0.5;
-	}
-
-	.hero-mark__outer,
-	.hero-mark__inner {
-		vector-effect: non-scaling-stroke;
 	}
 
 	.hero-mark__outer {
 		animation: hero-emphasis 12s ease-in-out infinite;
-		stroke: var(--primary);
-		stroke-linejoin: round;
-		stroke-width: 1.4;
-	}
-
-	.hero-mark__inner {
-		stroke: var(--foreground);
-		stroke-opacity: 0.48;
 	}
 
 	.hero-mark__orbit {
 		animation: hero-orbit 18s linear infinite;
-		fill: var(--primary);
-		filter: drop-shadow(0 0 7px color-mix(in oklch, var(--primary) 48%, transparent));
-		transform-box: view-box;
-		transform-origin: center;
-	}
-
-	.hero-mark__center {
-		fill: var(--foreground);
 	}
 
 	@keyframes hero-breathe {
