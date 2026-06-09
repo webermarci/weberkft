@@ -5,7 +5,7 @@
 <section id="services" aria-labelledby="services-title" class="border-b p-5 md:p-8">
 	<div class="mx-auto max-w-6xl space-y-8">
 		<div class="max-w-3xl space-y-4">
-			<p class="text-sm font-medium text-primary uppercase">Szolgáltatások</p>
+			<p class="text-sm font-medium tracking-widest text-primary uppercase">Szolgáltatások</p>
 			<h2 id="services-title" class="roboto-slab text-2xl font-bold">Amiben segítünk</h2>
 			<p class="text-muted-foreground">
 				Egyedi szoftveres és gépészeti megoldásokat tervezünk, fejlesztünk és vezetünk be — az első

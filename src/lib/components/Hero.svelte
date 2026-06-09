@@ -29,7 +29,7 @@
 	<div class="mx-auto grid max-w-6xl gap-10 lg:grid-cols-[1fr_22rem] lg:items-center">
 		<div class="max-w-3xl space-y-7">
 			<div class="space-y-5">
-				<p class="text-sm font-medium tracking-[0.18em] text-primary uppercase">
+				<p class="text-sm font-medium tracking-widest text-primary uppercase">
 					Szoftver • Gépészet • Automatizálás
 				</p>
 				<h1

@@ -36,7 +36,7 @@
 <section id="process" aria-labelledby="process-title" class="border-b bg-zinc-50 p-5 md:p-8">
 	<div class="mx-auto max-w-6xl space-y-8">
 		<div class="max-w-3xl space-y-4">
-			<p class="text-sm font-medium text-primary uppercase">Szemlélet</p>
+			<p class="text-sm font-medium tracking-widest text-primary uppercase">Szemlélet</p>
 			<h2 id="process-title" class="roboto-slab text-2xl font-bold">
 				Ami miatt hosszú távon is működik
 			</h2>

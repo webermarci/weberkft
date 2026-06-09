@@ -4,7 +4,7 @@
 <section id="contact" class="bg-zinc-50 p-5 md:p-8">
 	<div class="mx-auto grid max-w-6xl gap-10 lg:grid-cols-5 lg:items-start">
 		<div class="col-span-2 flex flex-col gap-3">
-			<p class="text-sm font-medium text-primary uppercase">Kapcsolat</p>
+			<p class="text-sm font-medium tracking-widest text-primary uppercase">Kapcsolat</p>
 			<div class="space-y-4">
 				<h2 id="contact-title" class="roboto-slab text-4xl font-bold">
 					Beszéljünk a következő digitális lépésről.
