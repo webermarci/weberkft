@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" fill="none">
+	<title>Wéber Kft.</title>
+	<text
+		x="29"
+		y="48"
+		text-anchor="middle"
+		font-family="Georgia, 'Times New Roman', serif"
+		font-size="46"
+		font-weight="700"
+		letter-spacing="-2"
+		fill="#18181b"
+	>
+		W
+	</text>
+	<polygon points="54,37 60,40.5 60,47.5 54,51 48,47.5 48,40.5" fill="#247b80" />
+</svg>
