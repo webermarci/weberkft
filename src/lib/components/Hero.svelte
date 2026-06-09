@@ -32,7 +32,10 @@
 				<p class="text-sm font-medium tracking-[0.18em] text-primary uppercase">
 					Szoftver • Gépészet • Automatizálás
 				</p>
-				<h1 id="hero-title" class="roboto-slab max-w-2xl text-4xl font-bold text-balance">
+				<h1
+					id="hero-title"
+					class="roboto-slab max-w-2xl text-4xl font-bold text-balance lg:text-5xl"
+				>
 					Egyedi mérnöki és szoftveres rendszerek üzleti folyamatokra szabva.
 				</h1>
 				<p class="max-w-2xl text-muted-foreground">
